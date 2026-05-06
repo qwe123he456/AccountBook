@@ -1,3 +1,3 @@
 #include "main.h"
 
-void AddItem(Item);
+void AddItem(Reason reason, int amount);

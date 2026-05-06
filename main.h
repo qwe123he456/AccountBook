@@ -4,7 +4,8 @@
 #include <fstream>
 using namespace std;
 
-/* 账目类型枚举 */
+/* 枚举声明 */
+// 账目类型枚举
 enum Reason
 {
     study,
@@ -13,8 +14,24 @@ enum Reason
 };
 
 /* 类的声明 */
-class Date; // 日期类
-class Item; // 账单项目
+// 日期类
+class Date
+{
+public:
+    int year;
+    int month;
+    int day;
+    Date(int year = 1, int month = 1, int day = 1);
+};
+// 账单的单项
+class Item
+{
+public:
+    Date date;
+    Reason reason;
+    int amount;
+    Item(Date date, Reason reason = study, int amount = 0);
+};
 
-// 大列表
-vector<Item> itemList(0);
+/* 全局变量声明 */
+extern vector<Item> itemList; // 大列表

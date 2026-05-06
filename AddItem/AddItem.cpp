@@ -1,3 +1,5 @@
-void AddItem(Item)
+#include "main.h"
+
+void AddItem(Item item)
 {
 }
