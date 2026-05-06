@@ -1,5 +1,5 @@
 // 将枚举类型转换成字符串
-const char *ReasonToString(Reason reason)
+string ReasonToString(Reason reason)
 {
     switch (reason)
     {
@@ -23,7 +23,7 @@ void display()
                item.date.year,
                item.date.month,
                item.date.day,
-               ReasonToString(item.reason),
+               ReasonToString(item.reason).c_str(),
                item.amount);
     }
 }
