@@ -6,7 +6,7 @@ using namespace std;
 
 /* 枚举声明 */
 // 账目类型枚举
-enum Reason
+enum Category
 {
     study,
     life,
@@ -27,10 +27,11 @@ public:
 class Item
 {
 public:
-    Date date;
-    Reason reason;
-    int amount;
-    Item(Date date, Reason reason = study, int amount = 0);
+    Date date;         // 日期
+    Category category; // 类型
+    string desc;       // 明细
+    int amount;        // 金额
+    Item(Date date, Category category = study, string desc = "", int amount = 0);
 };
 
 /* 全局变量声明 */

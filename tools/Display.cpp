@@ -1,7 +1,7 @@
 // 将枚举类型转换成字符串
-string ReasonToString(Reason reason)
+string ReasonToString(Category category)
 {
-    switch (reason)
+    switch (category)
     {
     case study:
         return "study";
@@ -23,7 +23,7 @@ void display()
                item.date.year,
                item.date.month,
                item.date.day,
-               ReasonToString(item.reason).c_str(),
+               ReasonToString(item.category).c_str(),
                item.amount);
     }
 }

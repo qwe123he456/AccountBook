@@ -1,1 +1,6 @@
 *.exe
+Tester.cpp
+tester.cpp
+Tester2.cpp
+tester2.cpp
+.gitignore
